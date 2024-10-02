@@ -20,7 +20,7 @@ RUN cd /mimic-code \
  && git pull origin main
 
 RUN cd /mimic-code \
- && cp -r mimic-iii/buildmimic/postgres /docker-entrypoint-initdb.d/
+ && cp -r mimic-iii/buildmimic /docker-entrypoint-initdb.d/
 
 COPY setup.sh /mimic-code/mimic-iii/buildmimic/docker/setup.sh
 
